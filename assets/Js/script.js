@@ -12,7 +12,18 @@ var currentDay = dayjs().format('MM/DD/YYYY');
 const weatherIconUrl = 'http://openweathermap.org/img/wn/';
 var searchHistoryArray = loadHistory();
 
+// Function to capitalize the  first letter of a string
 
+function titleCase(str) {
+    var splitStr = str.toLowerCase().split(' ');
+    for (var i = 0; i < splitStr.length; i++) {
+        
+        // Assign it back to the array
+        splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
+    }
+    // Directly return the joined string
+    return splitStr.join(' ');
+}
 
 //load cities from local storage 
 function loadHistory() {
@@ -227,8 +238,8 @@ function displayWeather(city) {
  function submitCitySearch(event) {
     event.preventDefault();
 
-    //get value from user input
-    var city = cityInputEl.val().trim();
+    //get value from user input with titleCase function to prevent to search two times the same city( first letter with capitalize letter and with lower caser letter)
+    var city = titleCase(cityInputEl.val().trim());
 
     //prevent them from searching for cities stored in local storage
     if (searchHistoryArray.searchedCity.includes(city)) {
