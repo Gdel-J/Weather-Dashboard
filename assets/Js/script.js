@@ -1,7 +1,7 @@
 //  GLOBAL VARIABLES //
 
-var openWApiKey = '96541d8aaaa42672814c33cc4202c5ba';
-var openWCoordinatesUrl = 'https://api.openweathermap.org/data/2.5/weather?q=';
+var openWeatherApiKey= '1b18ce13c84e21faafb19c931bb29331';
+var openWeatherCoordinatesUrl = 'https://api.openweathermap.org/data/2.5/weather?q=';
 var oneCallUrl = 'https://api.openweathermap.org/data/2.5/onecall?lat='
 var userFormEL = $('#city-search');
 var colforcities2El = $('.colforcities2');
@@ -69,7 +69,7 @@ function searchHistory(city) {
 // get weather data from apiUrl with getWeather function
 function displayWeather(city) {
     // apiUrl for coordinates
-    var apiCoordinatesUrl = openWCoordinatesUrl + city + '&appid=' + openWApiKey;
+    var apiCoordinatesUrl = openWeatherCoordinatesUrl + city + '&appid=' + openWeatherApiKey;
     // fetch the coordinates for parameter city
     fetch(apiCoordinatesUrl)
         .then(function (coordinateResponse) {
@@ -78,7 +78,7 @@ function displayWeather(city) {
                     var cityLatitude = data.coord.lat;
                     var cityLongitude = data.coord.lon;
                     // fetch weather information
-                    var apiOneCallUrl = oneCallUrl + cityLatitude + '&lon=' + cityLongitude + '&appid=' + openWApiKey + '&units=imperial';
+                    var apiOneCallUrl = oneCallUrl + cityLatitude + '&lon=' + cityLongitude + '&appid=' + openWeatherApiKey+ '&units=imperial';
 
                     fetch(apiOneCallUrl)
                         .then(function (weatherResponse) {
@@ -133,7 +133,7 @@ function displayWeather(city) {
 
                                             currWeatherListItem.append(uviItem);
 
-                                            //create every list item 
+                                            //create every list item that isn't uvIndex
                                         } else {
                                             var currWeatherListItem = $('<li>').text(currWeatherDetails[i])
                                             //append to ul
