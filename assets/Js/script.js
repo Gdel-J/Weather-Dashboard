@@ -1,6 +1,6 @@
 //  GLOBAL VARIABLES //
 
-var openWeatherApiKey= '1b18ce13c84e21faafb19c931bb29331';
+var openWeatherApiKey= 'baab8ae484a07edc40e2a62e054171ce';
 var openWeatherCoordinatesUrl = 'https://api.openweathermap.org/data/2.5/weather?q=';
 var oneCallUrl = 'https://api.openweathermap.org/data/2.5/onecall?lat='
 var userFormEL = $('#city-search');
