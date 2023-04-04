@@ -1,6 +1,6 @@
 //  GLOBAL VARIABLES //
 
-var openWApiKey = '1b18ce13c84e21faafb19c931bb29331';
+var openWApiKey = '96541d8aaaa42672814c33cc4202c5ba';
 var openWCoordinatesUrl = 'https://api.openweathermap.org/data/2.5/weather?q=';
 var oneCallUrl = 'https://api.openweathermap.org/data/2.5/onecall?lat='
 var userFormEL = $('#city-search');
@@ -133,7 +133,7 @@ function displayWeather(city) {
 
                                             currWeatherListItem.append(uviItem);
 
-                                            //create every list item that isn't uvIndex
+                                            //create every list item 
                                         } else {
                                             var currWeatherListItem = $('<li>').text(currWeatherDetails[i])
                                             //append to ul
@@ -159,7 +159,7 @@ function displayWeather(city) {
                                              id: 'five-day-header'
                                          })
  
-                                     //append 5 day forecast header to colforcities2 after current weather div
+                                     //append 5 day forecast header to colforcities2 after current weather section
                                      $('#current-weather').after(fiveDayHeaderEl)
  
                                      // create array for the dates for the next 5 days
