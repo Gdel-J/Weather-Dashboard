@@ -1,3 +1,6 @@
+$(document).ready(function () {
+
+
 //  GLOBAL VARIABLES //
 
 var openWeatherApiKey= 'baab8ae484a07edc40e2a62e054171ce';
@@ -268,3 +271,5 @@ function displayWeather(city) {
      $('#five-day').empty();
      $('#five-day-header').remove();
  })
+
+})
