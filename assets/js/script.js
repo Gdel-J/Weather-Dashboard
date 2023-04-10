@@ -51,7 +51,7 @@ function loadHistory() {
 
 //save to local storage with setItem method
 function saveSearchHistory() {
-    localStorage.setItem('search history', JSON.stringify(searchHistoryArray));
+    localStorage.setItem('collection', JSON.stringify(searchHistoryArray));
 };
 
 
