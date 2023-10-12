@@ -15,13 +15,21 @@ This project has been deployed to GitHub Pages. To get this project up and runni
 
 ## Table of Contents 
 
-N/A
+[Weather-Dashboard](#Weather-Dashboard)
+- [Weather-Dashboard](#weather-dashboard)
+  - [Description](#description)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Credits](#credits)
 
 ## Installation
 
+Please find the link to the Github application : 
 
-Please Click on the link below to open the Weather-Dashboard app:
+https://github.com/Gdel-J/Weather-Dashboard.git
 
+Please Click on the link below to open the deployed Weather-Dashboard app:
 
 https://gdel-j.github.io/Weather-Dashboard/
 
@@ -41,6 +49,6 @@ https://gdel-j.github.io/Weather-Dashboard/
 
 ## Credits
 
-Created  during my UCF coding bootcamp. 
-I  reviewed my bootcamp courses, read  from differents ressources and watched online videos.
+Created  by Gérard Del Vecchio during my UCF coding bootcamp. 
+Made with the bootcamp courses and online  videos.
 
